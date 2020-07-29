@@ -11,15 +11,5 @@ function playSound(e)
         key.classList.remove('playing');
     },300);//3000 =3 ses
 }
-/* alternate of setTimeout but thats not working
-function removeTransition(ex)
-{console.log(e);
-    if(ex.propertyName !== 'transform')return;
-   // console.log(ex.propertyName);
-    this.classList.remove('playing');
-}
 
-const keys = document.querySelectorAll('.key');
-keys.forEach(key => key.addEventListener('transitionend', removeTransition));
-*/
 window.addEventListener('keydown',playSound);
